@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  body { background:#f4f4f5; margin:0; padding:20px; font-family: -apple-system, "Malgun Gothic", sans-serif; }
+  .card { width: 480px; background:#fff; border:1px solid #e4e4e7; border-radius:16px; padding:14px; margin-bottom:20px; box-sizing:border-box; }
+  .head { display:flex; gap:12px; align-items:flex-start; }
+  .sprite { width:90px; height:90px; object-fit:contain; flex-shrink:0; }
+  .info { display:flex; flex-direction:column; gap:6px; flex-grow:1; }
+  .name { font-size:18px; font-weight:800; color:#18181b; }
+  .badges { display:flex; gap:6px; flex-wrap:wrap; }
+  .type { display:inline-flex; align-items:center; height:24px; padding:0 10px; border-radius:6px; font-size:12px; font-weight:700; color:#fff; }
+  .tag { display:inline-flex; align-items:center; height:24px; padding:0 10px; border-radius:6px; font-size:12px; border:1px solid #e4e4e7; background:#fafafa; color:#3f3f46; }
+  .statline { font-size:12px; color:#52525b; line-height:1.6; }
+  .statline b { color:#18181b; font-weight:700; }
+  .item { display:flex; align-items:center; gap:6px; font-size:12px; color:#3f3f46; }
+  .item img { width:20px; height:20px; }
+  .divider { height:1px; background:#e4e4e7; margin:10px 0; }
+  .body { display:flex; gap:10px; }
+  .moves { flex-shrink:0; width:150px; display:flex; flex-direction:column; gap:4px; }
+  .move { display:flex; align-items:center; gap:6px; background:#f4f4f5; border-radius:6px; padding:4px 8px; font-size:12px; color:#27272a; }
+  .dot { width:8px; height:8px; border-radius:50%; flex-shrink:0; background:#a1a1aa; }
+  .stats { flex-grow:1; }
+  table { width:100%; border-collapse:collapse; font-size:12px; text-align:center; }
+  th { color:#71717a; font-weight:600; padding:2px 0; }
+  td { padding:3px 0; }
+  .real { font-weight:800; font-size:14px; color:#18181b; }
+  .ev { color:#71717a; }
+</style>
+</head>
+<body>
+
+<div class="card" id="c1">
+  <div class="head">
+    <img class="sprite" src="https://pokesol.app/api/images/assets/pokemons/0445.png">
+    <div class="info">
+      <div class="name">한카리아스</div>
+      <div class="badges"><span class="type" style="background:#7038F8">드래곤</span><span class="type" style="background:#E0C068">땅</span></div>
+      <div class="statline">특성(능력 보정): <b>까칠한피부</b><br>성격: <b>고집</b></div>
+      <div class="item"><img src="https://pokesol.app/api/images/assets/items/focussash.png">기합의띠</div>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <div class="body">
+    <div class="moves">
+      <div class="move"><span class="dot" style="background:#E0C068"></span>지진</div>
+      <div class="move"><span class="dot" style="background:#7038F8"></span>스케일샷</div>
+      <div class="move"><span class="dot" style="background:#B8B8D0"></span>아이언헤드</div>
+      <div class="move"><span class="dot" style="background:#B8A038"></span>스텔스록</div>
+    </div>
+    <div class="stats">
+      <table>
+        <tr><th>H</th><th>A</th><th>B</th><th>C</th><th>D</th><th>S</th></tr>
+        <tr class="real"><td>183</td><td>200</td><td>116</td><td>90</td><td>106</td><td>154</td></tr>
+        <tr class="ev"><td>—</td><td>32</td><td>1</td><td>—</td><td>1</td><td>32</td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="card" id="c2">
+  <div class="head">
+    <img class="sprite" src="https://pokesol.app/api/images/assets/pokemons/0902.png">
+    <div class="info">
+      <div class="name">대쓰여너</div>
+      <div class="badges"><span class="type" style="background:#6890F0">물</span><span class="type" style="background:#705898">고스트</span></div>
+      <div class="statline">특성(능력 보정): <b>적응력</b><br>성격: <b>고집</b></div>
+      <div class="item"><img src="https://pokesol.app/api/images/assets/items/mysticwater.png">신비의물방울</div>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <div class="body">
+    <div class="moves">
+      <div class="move"><span class="dot" style="background:#6890F0"></span>웨이브태클</div>
+      <div class="move"><span class="dot" style="background:#705898"></span>성묘</div>
+      <div class="move"><span class="dot" style="background:#A8A878"></span>대타출동</div>
+      <div class="move"><span class="dot" style="background:#6890F0"></span>아쿠아제트</div>
+    </div>
+    <div class="stats">
+      <table>
+        <tr><th>H</th><th>A</th><th>B</th><th>C</th><th>D</th><th>S</th></tr>
+        <tr class="real"><td>207</td><td>180</td><td>101</td><td>90</td><td>96</td><td>103</td></tr>
+        <tr class="ev"><td>12</td><td>32</td><td>16</td><td>—</td><td>1</td><td>5</td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="card" id="c3">
+  <div class="head">
+    <img class="sprite" src="https://pokesol.app/api/images/assets/pokemons/0154_01.png">
+    <div class="info">
+      <div class="name">메가메가니움</div>
+      <div class="badges"><span class="type" style="background:#78C850">풀</span><span class="type" style="background:#EE99AC">페어리</span></div>
+      <div class="statline">특성(능력 보정): <b>메가솔라</b><br>성격: <b>겁쟁이</b></div>
+      <div class="item"><img src="https://pokesol.app/api/images/assets/items/Meganiumite.png">메가니움나이트</div>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <div class="body">
+    <div class="moves">
+      <div class="move"><span class="dot" style="background:#78C850"></span>솔라빔</div>
+      <div class="move"><span class="dot" style="background:#A8A878"></span>웨더볼</div>
+      <div class="move"><span class="dot" style="background:#B8A038"></span>원시의힘</div>
+      <div class="move"><span class="dot" style="background:#78C850"></span>개척하기</div>
+    </div>
+    <div class="stats">
+      <table>
+        <tr><th>H</th><th>A</th><th>B</th><th>C</th><th>D</th><th>S</th></tr>
+        <tr class="real"><td>157</td><td>100</td><td>135</td><td>195</td><td>135</td><td>145</td></tr>
+        <tr class="ev"><td>2</td><td>—</td><td>—</td><td>32</td><td>—</td><td>32</td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="card" id="c4">
+  <div class="head">
+    <img class="sprite" src="https://pokesol.app/api/images/assets/pokemons/0303_01.png">
+    <div class="info">
+      <div class="name">메가입치트</div>
+      <div class="badges"><span class="type" style="background:#B8B8D0">강철</span><span class="type" style="background:#EE99AC">페어리</span></div>
+      <div class="statline">특성(능력 보정): <b>괴력</b><br>성격: <b>고집</b></div>
+      <div class="item"><img src="https://pokesol.app/api/images/assets/items/Mawilite.png">입치트나이트</div>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <div class="body">
+    <div class="moves">
+      <div class="move"><span class="dot" style="background:#EE99AC"></span>치근거리기</div>
+      <div class="move"><span class="dot" style="background:#705848"></span>탁쳐서떨구기</div>
+      <div class="move"><span class="dot" style="background:#705848"></span>기습</div>
+      <div class="move"><span class="dot" style="background:#A8A878"></span>칼춤</div>
+    </div>
+    <div class="stats">
+      <table>
+        <tr><th>H</th><th>A</th><th>B</th><th>C</th><th>D</th><th>S</th></tr>
+        <tr class="real"><td>141</td><td>172</td><td>145</td><td>67</td><td>115</td><td>88</td></tr>
+        <tr class="ev"><td>16</td><td>32</td><td>—</td><td>—</td><td>—</td><td>18</td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="card" id="c5">
+  <div class="head">
+    <img class="sprite" src="https://pokesol.app/api/images/assets/pokemons/0778.png">
+    <div class="info">
+      <div class="name">따라큐</div>
+      <div class="badges"><span class="type" style="background:#705898">고스트</span><span class="type" style="background:#EE99AC">페어리</span></div>
+      <div class="statline">특성(능력 보정): <b>화신</b><br>성격: <b>용감</b></div>
+      <div class="item"><img src="https://pokesol.app/api/images/assets/items/lifeorb.png">생명의구슬</div>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <div class="body">
+    <div class="moves">
+      <div class="move"><span class="dot" style="background:#EE99AC"></span>치근거리기</div>
+      <div class="move"><span class="dot" style="background:#705898"></span>야습</div>
+      <div class="move"><span class="dot" style="background:#705898"></span>저주</div>
+      <div class="move"><span class="dot" style="background:#F85888"></span>트릭룸</div>
+    </div>
+    <div class="stats">
+      <table>
+        <tr><th>H</th><th>A</th><th>B</th><th>C</th><th>D</th><th>S</th></tr>
+        <tr class="real"><td>139</td><td>156</td><td>125</td><td>70</td><td>125</td><td>104</td></tr>
+        <tr class="ev"><td>9</td><td>32</td><td>25</td><td>—</td><td>—</td><td>—</td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="card" id="c6">
+  <div class="head">
+    <img class="sprite" src="https://pokesol.app/api/images/assets/pokemons/0635.png">
+    <div class="info">
+      <div class="name">삼삼드래</div>
+      <div class="badges"><span class="type" style="background:#705848">악</span><span class="type" style="background:#7038F8">드래곤</span></div>
+      <div class="statline">특성(능력 보정): <b>부유</b><br>성격: <b>겁쟁이</b></div>
+      <div class="item"><img src="https://pokesol.app/api/images/assets/items/leftovers.png">먹다남은음식</div>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <div class="body">
+    <div class="moves">
+      <div class="move"><span class="dot" style="background:#7038F8"></span>용의파동</div>
+      <div class="move"><span class="dot" style="background:#705848"></span>악의파동</div>
+      <div class="move"><span class="dot" style="background:#705848"></span>나쁜음모</div>
+      <div class="move"><span class="dot" style="background:#705848"></span>도발</div>
+    </div>
+    <div class="stats">
+      <table>
+        <tr><th>H</th><th>A</th><th>B</th><th>C</th><th>D</th><th>S</th></tr>
+        <tr class="real"><td>177</td><td>112</td><td>110</td><td>177</td><td>110</td><td>156</td></tr>
+        <tr class="ev"><td>10</td><td>—</td><td>—</td><td>32</td><td>—</td><td>24</td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
