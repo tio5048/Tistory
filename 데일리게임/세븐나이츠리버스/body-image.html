@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1000px; height:560px; overflow:hidden; font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif; }
+  .stage {
+    position:relative;
+    width:1000px; height:560px;
+    background:
+      radial-gradient(circle at 12% 88%, rgba(167,139,250,0.26) 0%, rgba(167,139,250,0) 42%),
+      linear-gradient(160deg, #120a20 0%, #1a1128 55%, #221a3a 100%);
+    padding:56px 64px;
+  }
+  .eyebrow {
+    color:#c4b5fd; font-size:19px; font-weight:700; letter-spacing:2px;
+  }
+  .headline {
+    margin-top:14px;
+    color:#f1f5f9; font-size:34px; font-weight:800; line-height:1.35;
+  }
+  .headline b { color:#a78bfa; }
+  .grid {
+    margin-top:40px;
+    display:flex; gap:22px;
+  }
+  .card {
+    flex:1;
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(167,139,250,0.25);
+    border-radius:14px;
+    padding:26px 22px;
+  }
+  .card .mark {
+    width:34px; height:34px; border-radius:8px;
+    background:rgba(167,139,250,0.18);
+    border:1px solid rgba(167,139,250,0.5);
+    margin-bottom:16px;
+    position:relative;
+  }
+  .card .mark::after {
+    content:""; position:absolute; inset:9px;
+    background:#a78bfa; border-radius:2px;
+  }
+  .card h3 { color:#f0f4f8; font-size:20px; font-weight:700; margin-bottom:8px; }
+  .card .num { color:#a78bfa; font-size:26px; font-weight:800; margin-bottom:6px; }
+  .card p { color:#9d9dbc; font-size:15px; line-height:1.55; }
+  .footer {
+    margin-top:36px;
+    color:#6b6f8f; font-size:16px; font-weight:600; letter-spacing:1px;
+  }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="eyebrow">SEVEN KNIGHTS RE:BIRTH UPDATE</div>
+    <div class="headline">세븐나이츠 리버스 업데이트 <b>핵심 정보</b> 한눈에 보기</div>
+    <div class="grid">
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">각성 영웅</div>
+        <h3>'루디' 최고 등급 지급</h3>
+        <p>방어 버프·피해 분산 탱커<br>미션 완료 시 강화 완료 지급</p>
+      </div>
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">신규 영웅</div>
+        <h3>'아리스' 합류</h3>
+        <p>방어덱 특화 딜러<br>피격 시 화력 강해지는 버프</p>
+      </div>
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">77장 × 7일</div>
+        <h3>'세나의 달' 이벤트</h3>
+        <p>전설 영웅 소환권 매일 지급<br>코스튬 4종 전 유저 무료</p>
+      </div>
+    </div>
+    <div class="footer">데일리 게임</div>
+  </div>
+</body>
+</html>
