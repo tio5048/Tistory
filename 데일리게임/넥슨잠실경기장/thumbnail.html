@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1200px; height:630px; overflow:hidden; font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif; }
+  .stage {
+    position:relative;
+    width:1200px; height:630px;
+    background:
+      radial-gradient(circle at 85% 15%, rgba(56,189,248,0.30) 0%, rgba(56,189,248,0) 45%),
+      linear-gradient(135deg, #0a1220 0%, #101d33 45%, #142542 100%);
+    overflow:hidden;
+  }
+  /* arena ring emblem */
+  .emblem {
+    position:absolute; right:-100px; top:-100px;
+    width:520px; height:520px; border-radius:50%;
+    border:2px solid rgba(96,165,250,0.20);
+  }
+  .emblem::before {
+    content:""; position:absolute; inset:60px; border-radius:50%;
+    border:2px solid rgba(96,165,250,0.16);
+  }
+  .emblem::after {
+    content:""; position:absolute; inset:120px; border-radius:50%;
+    border:2px solid rgba(96,165,250,0.12);
+  }
+  /* stadium seating bars */
+  .bars { position:absolute; left:0; bottom:0; width:420px; height:170px; display:flex; align-items:flex-end; gap:6px; padding-left:70px; opacity:0.55; }
+  .bars .bar { width:16px; background:linear-gradient(180deg,#38bdf8,#1d4ed8 90%); border-radius:3px 3px 0 0; }
+  .bars .bar:nth-child(1){height:40px;opacity:.35;}
+  .bars .bar:nth-child(2){height:64px;opacity:.45;}
+  .bars .bar:nth-child(3){height:90px;opacity:.55;}
+  .bars .bar:nth-child(4){height:120px;opacity:.65;}
+  .bars .bar:nth-child(5){height:150px;opacity:.75;}
+  .bars .bar:nth-child(6){height:110px;opacity:.6;}
+  .bars .bar:nth-child(7){height:78px;opacity:.5;}
+  .bars .bar:nth-child(8){height:52px;opacity:.4;}
+
+  .content {
+    position:relative; z-index:2;
+    padding:80px 90px;
+    display:flex; flex-direction:column; justify-content:center;
+    height:100%;
+  }
+  .tag {
+    display:inline-block; align-self:flex-start;
+    padding:8px 22px; margin-bottom:28px;
+    background:rgba(56,189,248,0.15);
+    border:1px solid rgba(56,189,248,0.55);
+    border-radius:999px;
+    color:#7dd3fc; font-size:22px; font-weight:700; letter-spacing:2px;
+  }
+  .title-en {
+    font-size:56px; font-weight:800; color:#f1f5f9; letter-spacing:0.5px;
+    line-height:1.2;
+  }
+  .title-en .hl { color:#38bdf8; }
+  .title-kr {
+    margin-top:22px;
+    font-size:38px; font-weight:700; color:#e2e8f0;
+    line-height:1.4;
+  }
+  .title-kr b { color:#60a5fa; }
+  .sub {
+    margin-top:30px;
+    font-size:24px; color:#94a3b8; font-weight:500;
+  }
+  .brand {
+    position:absolute; left:90px; bottom:44px;
+    font-size:22px; font-weight:700; color:#64748b; letter-spacing:1px;
+  }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="emblem"></div>
+    <div class="bars">
+      <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+      <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+    </div>
+    <div class="content">
+      <span class="tag">SPORTS INFRASTRUCTURE</span>
+      <div class="title-en">JAMSIL <span class="hl">E-SPORTS</span> ARENA</div>
+      <div class="title-kr">넥슨, 잠실 e스포츠 경기장<br><b>40년 운영권</b> 확보</div>
+      <div class="sub">국내 최대 규모 · 11,000석 · 2032년 완공 목표</div>
+    </div>
+    <div class="brand">데일리 게임</div>
+  </div>
+</body>
+</html>

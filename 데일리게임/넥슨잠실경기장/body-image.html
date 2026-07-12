@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1000px; height:560px; overflow:hidden; font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif; }
+  .stage {
+    position:relative;
+    width:1000px; height:560px;
+    background:
+      radial-gradient(circle at 12% 88%, rgba(56,189,248,0.26) 0%, rgba(56,189,248,0) 42%),
+      linear-gradient(160deg, #0a1220 0%, #101d33 55%, #16294a 100%);
+    padding:56px 64px;
+  }
+  .eyebrow {
+    color:#7dd3fc; font-size:19px; font-weight:700; letter-spacing:2px;
+  }
+  .headline {
+    margin-top:14px;
+    color:#f1f5f9; font-size:34px; font-weight:800; line-height:1.35;
+  }
+  .headline b { color:#38bdf8; }
+  .grid {
+    margin-top:40px;
+    display:flex; gap:22px;
+  }
+  .card {
+    flex:1;
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(96,165,250,0.25);
+    border-radius:14px;
+    padding:26px 22px;
+  }
+  .card .mark {
+    width:34px; height:34px; border-radius:8px;
+    background:rgba(56,189,248,0.18);
+    border:1px solid rgba(56,189,248,0.5);
+    margin-bottom:16px;
+    position:relative;
+  }
+  .card .mark::after {
+    content:""; position:absolute; inset:9px;
+    background:#38bdf8; border-radius:2px;
+  }
+  .card h3 { color:#f0f4f8; font-size:20px; font-weight:700; margin-bottom:8px; }
+  .card .num { color:#38bdf8; font-size:26px; font-weight:800; margin-bottom:6px; }
+  .card p { color:#93a3b8; font-size:15px; line-height:1.55; }
+  .footer {
+    margin-top:36px;
+    color:#5f7089; font-size:16px; font-weight:600; letter-spacing:1px;
+  }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="eyebrow">JAMSIL SPORTS·MICE COMPLEX</div>
+    <div class="headline">잠실 e스포츠 경기장 <b>핵심 정보</b> 한눈에 보기</div>
+    <div class="grid">
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">11,000석</div>
+        <h3>국내 최대 규모</h3>
+        <p>전용 e스포츠 경기장 중<br>최대 좌석 규모로 조성</p>
+      </div>
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">40년</div>
+        <h3>장기 운영권 확보</h3>
+        <p>넥슨이 잠실 복합공간 내<br>경기장 운영권을 확보</p>
+      </div>
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">2032년</div>
+        <h3>완공 목표 시점</h3>
+        <p>스포츠·마이스 복합공간과<br>함께 순차적으로 조성 예정</p>
+      </div>
+    </div>
+    <div class="footer">데일리 게임</div>
+  </div>
+</body>
+</html>
