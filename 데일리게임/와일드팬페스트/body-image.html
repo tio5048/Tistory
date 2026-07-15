@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1000px; height:560px; overflow:hidden; font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif; }
+  .stage {
+    position:relative;
+    width:1000px; height:560px;
+    background:
+      radial-gradient(circle at 12% 88%, rgba(200,155,60,0.26) 0%, rgba(200,155,60,0) 42%),
+      linear-gradient(160deg, #050a14 0%, #0a1428 55%, #0d1c33 100%);
+    padding:56px 64px;
+  }
+  .eyebrow {
+    color:#e8c778; font-size:19px; font-weight:700; letter-spacing:2px;
+  }
+  .headline {
+    margin-top:14px;
+    color:#f1f5f9; font-size:32px; font-weight:800; line-height:1.35;
+  }
+  .headline b { color:#c89b3c; }
+  .grid {
+    margin-top:40px;
+    display:flex; gap:22px;
+  }
+  .card {
+    flex:1;
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(200,155,60,0.25);
+    border-radius:14px;
+    padding:26px 22px;
+  }
+  .card .mark {
+    width:34px; height:34px; border-radius:8px;
+    background:rgba(200,155,60,0.18);
+    border:1px solid rgba(200,155,60,0.5);
+    margin-bottom:16px;
+    position:relative;
+  }
+  .card .mark::after {
+    content:""; position:absolute; inset:9px;
+    background:#c89b3c; border-radius:2px;
+  }
+  .card h3 { color:#f0f4f8; font-size:20px; font-weight:700; margin-bottom:8px; }
+  .card .num { color:#c89b3c; font-size:22px; font-weight:800; margin-bottom:6px; }
+  .card p { color:#8a97ac; font-size:15px; line-height:1.55; }
+  .footer {
+    margin-top:36px;
+    color:#4a5a70; font-size:16px; font-weight:600; letter-spacing:1px;
+  }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="eyebrow">와일드 팬페스트 · TFT 신비의 숲</div>
+    <div class="headline">더현대 서울 '사운즈 포레스트' <b>단일 IP 최초 단독 단장</b></div>
+    <div class="grid">
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">더현대 서울 → 판교점</div>
+        <h3>순차 진행</h3>
+        <p>여의도서 시작해 판교점까지<br>약 한 달간 이어지는 대장정</p>
+      </div>
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">TFT·리프트바운드·와일드 리프트</div>
+        <h3>3개 IP 동시 체험</h3>
+        <p>신규 콘텐츠 체험존·참여형 프로그램<br>e스포츠 관람·아티스트 콘서트</p>
+      </div>
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">7/15~7/29</div>
+        <h3>팬아트 공모전</h3>
+        <p>TFT 신규 세트 테마 공모<br>당선작 현장 전시, 사전예약 7월 말</p>
+      </div>
+    </div>
+    <div class="footer">티오의 게임노트</div>
+  </div>
+</body>
+</html>
