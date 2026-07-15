@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1000px; height:560px; overflow:hidden; font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif; }
+  .stage {
+    position:relative;
+    width:1000px; height:560px;
+    background:
+      radial-gradient(circle at 12% 88%, rgba(255,61,129,0.26) 0%, rgba(255,61,129,0) 42%),
+      linear-gradient(160deg, #0a0510 0%, #1a0a24 55%, #200f33 100%);
+    padding:56px 64px;
+  }
+  .eyebrow {
+    color:#ff8fb3; font-size:19px; font-weight:700; letter-spacing:2px;
+  }
+  .headline {
+    margin-top:14px;
+    color:#f1f5f9; font-size:32px; font-weight:800; line-height:1.35;
+  }
+  .headline b { color:#ff3d81; }
+  .grid {
+    margin-top:40px;
+    display:flex; gap:22px;
+  }
+  .card {
+    flex:1;
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(255,61,129,0.25);
+    border-radius:14px;
+    padding:26px 22px;
+  }
+  .card .mark {
+    width:34px; height:34px; border-radius:8px;
+    background:rgba(255,61,129,0.18);
+    border:1px solid rgba(255,61,129,0.5);
+    margin-bottom:16px;
+    position:relative;
+  }
+  .card .mark::after {
+    content:""; position:absolute; inset:9px;
+    background:#ff3d81; border-radius:2px;
+  }
+  .card h3 { color:#f0f4f8; font-size:20px; font-weight:700; margin-bottom:8px; }
+  .card .num { color:#ff3d81; font-size:22px; font-weight:800; margin-bottom:6px; }
+  .card p { color:#9a8aa0; font-size:15px; line-height:1.55; }
+  .footer {
+    margin-top:36px;
+    color:#5a4a70; font-size:16px; font-weight:600; letter-spacing:1px;
+  }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="eyebrow">GTA6 발매 확정 · 업계 지각변동</div>
+    <div class="headline">대작 하나가 바꾼 <b>2026년 하반기 출시 지도</b></div>
+    <div class="grid">
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">11.19 콘솔 동시 발매</div>
+        <h3>PC는 미정</h3>
+        <p>PS5·엑스박스 시리즈 X|S 동시 출시<br>PC 버전 출시일은 아직 미공개</p>
+      </div>
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">대작 7종 몰림</div>
+        <h3>9월 대이동</h3>
+        <p>11월 정면충돌 피해 9월로 앞당김<br>9/24~25 사흘새 3편 연속 출시</p>
+      </div>
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">$79.99 / $99.99</div>
+        <h3>사전예약 시작</h3>
+        <p>스탠다드·얼티밋 에디션 가격 공개<br>6월 25일부터 사전 주문 돌입</p>
+      </div>
+    </div>
+    <div class="footer">티오의 게임노트</div>
+  </div>
+</body>
+</html>
