@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1000px; height:560px; overflow:hidden; font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif; }
+  .stage {
+    position:relative;
+    width:1000px; height:560px;
+    background:
+      radial-gradient(circle at 10% 90%, rgba(45,212,191,0.22) 0%, rgba(45,212,191,0) 42%),
+      radial-gradient(circle at 95% 0%, rgba(168,85,247,0.18) 0%, rgba(168,85,247,0) 45%),
+      linear-gradient(160deg, #050b0a 0%, #081210 55%, #0a0f16 100%);
+    padding:56px 64px;
+  }
+  .eyebrow {
+    color:#5eead4; font-size:19px; font-weight:700; letter-spacing:2px;
+  }
+  .headline {
+    margin-top:14px;
+    color:#f1f5f9; font-size:31px; font-weight:800; line-height:1.35;
+  }
+  .headline b { color:#2dd4bf; }
+  .grid {
+    margin-top:38px;
+    display:flex; gap:22px;
+  }
+  .card {
+    flex:1;
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(45,212,191,0.22);
+    border-radius:14px;
+    padding:26px 22px;
+  }
+  .card .mark {
+    width:34px; height:34px; border-radius:8px;
+    background:rgba(45,212,191,0.16);
+    border:1px solid rgba(45,212,191,0.5);
+    margin-bottom:16px;
+    position:relative;
+  }
+  .card .mark::after {
+    content:""; position:absolute; inset:9px;
+    background:#2dd4bf; border-radius:2px;
+  }
+  .card:nth-child(2) .mark { background:rgba(168,85,247,0.16); border-color:rgba(168,85,247,0.5); }
+  .card:nth-child(2) .mark::after { background:#a855f7; }
+  .card:nth-child(2) .num { color:#c084fc; }
+  .card:nth-child(3) .mark { background:rgba(236,72,153,0.16); border-color:rgba(236,72,153,0.5); }
+  .card:nth-child(3) .mark::after { background:#ec4899; }
+  .card:nth-child(3) .num { color:#f472b6; }
+  .card h3 { color:#f0f4f8; font-size:20px; font-weight:700; margin-bottom:8px; }
+  .card .num { color:#2dd4bf; font-size:21px; font-weight:800; margin-bottom:6px; }
+  .card p { color:#8a9099; font-size:15px; line-height:1.55; }
+  .footer {
+    margin-top:34px;
+    color:#3a4048; font-size:16px; font-weight:600; letter-spacing:1px;
+  }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="eyebrow">구독 서비스 라인업 변경</div>
+    <div class="headline">엑스박스 게임패스, <b>7월 31일</b> 8종 동시 제외</div>
+    <div class="grid">
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">7/31 제외</div>
+        <h3>셀레스테 등 8종</h3>
+        <p>콘솔·PC·클라우드 전체<br>Whiskerwood는 PC만</p>
+      </div>
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">최대 20%+</div>
+        <h3>제외 전 할인 판매</h3>
+        <p>서머세일과 맞물려 진행<br>소장 원하면 지금이 기회</p>
+      </div>
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">8월 신작 5종</div>
+        <h3>헤일로 등 신규 합류</h3>
+        <p>7월 중 헤일로·미스트폴헌터<br>8월 라인업 이미 확정</p>
+      </div>
+    </div>
+    <div class="footer">티오의 게임노트</div>
+  </div>
+</body>
+</html>
