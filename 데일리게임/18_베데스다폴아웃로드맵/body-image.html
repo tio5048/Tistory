@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1000px; height:560px; overflow:hidden; font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif; }
+  .stage {
+    position:relative;
+    width:1000px; height:560px;
+    background:
+      radial-gradient(circle at 8% 92%, rgba(132,204,22,0.20) 0%, rgba(132,204,22,0) 42%),
+      radial-gradient(circle at 95% 0%, rgba(217,119,6,0.20) 0%, rgba(217,119,6,0) 45%),
+      linear-gradient(160deg, #0d0a06 0%, #171008 55%, #120c07 100%);
+    padding:56px 64px;
+  }
+  .eyebrow {
+    color:#facc15; font-size:19px; font-weight:700; letter-spacing:2px;
+  }
+  .headline {
+    margin-top:14px;
+    color:#f1ede4; font-size:31px; font-weight:800; line-height:1.35;
+  }
+  .headline b { color:#84cc16; }
+  .grid {
+    margin-top:38px;
+    display:flex; gap:22px;
+  }
+  .card {
+    flex:1;
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(250,204,21,0.22);
+    border-radius:14px;
+    padding:26px 22px;
+  }
+  .card .mark {
+    width:34px; height:34px; border-radius:8px;
+    background:rgba(250,204,21,0.16);
+    border:1px solid rgba(250,204,21,0.5);
+    margin-bottom:16px;
+    position:relative;
+  }
+  .card .mark::after {
+    content:""; position:absolute; inset:9px;
+    background:#facc15; border-radius:2px;
+  }
+  .card:nth-child(2) .mark { background:rgba(132,204,22,0.16); border-color:rgba(132,204,22,0.5); }
+  .card:nth-child(2) .mark::after { background:#84cc16; }
+  .card:nth-child(2) .num { color:#a3e635; }
+  .card:nth-child(3) .mark { background:rgba(180,83,9,0.16); border-color:rgba(180,83,9,0.5); }
+  .card:nth-child(3) .mark::after { background:#b45309; }
+  .card:nth-child(3) .num { color:#f0975a; }
+  .card h3 { color:#f0ece2; font-size:20px; font-weight:700; margin-bottom:8px; }
+  .card .num { color:#facc15; font-size:21px; font-weight:800; margin-bottom:6px; }
+  .card p { color:#948a76; font-size:15px; line-height:1.55; }
+  .footer {
+    margin-top:34px;
+    color:#463d2c; font-size:16px; font-weight:600; letter-spacing:1px;
+  }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="eyebrow">베데스다 게임 스튜디오 로드맵</div>
+    <div class="headline">폴아웃3·뉴베가스 <b>리마스터</b> 동시 확인</div>
+    <div class="grid">
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">리마스터 2종</div>
+        <h3>폴아웃3·뉴베가스</h3>
+        <p>오블리비언 리마스터 후속<br>구체 출시일은 미공개</p>
+      </div>
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">폴아웃5</div>
+        <h3>프리프로덕션 단계</h3>
+        <p>옵시디언 신규 프로젝트도<br>동시 진행 중 확인</p>
+      </div>
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">엘더스크롤6</div>
+        <h3>개발 최우선 과제</h3>
+        <p>크리에이션 엔진3 기반<br>"다음 챕터는 오고 있다"</p>
+      </div>
+    </div>
+    <div class="footer">티오의 게임노트</div>
+  </div>
+</body>
+</html>
