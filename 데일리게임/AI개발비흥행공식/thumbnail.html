@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1200px; height:630px; overflow:hidden; font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif; }
+  .stage {
+    position:relative;
+    width:1200px; height:630px;
+    background:
+      radial-gradient(circle at 88% 10%, rgba(99,102,241,0.26) 0%, rgba(99,102,241,0) 42%),
+      radial-gradient(circle at 100% 60%, rgba(167,139,250,0.16) 0%, rgba(167,139,250,0) 46%),
+      radial-gradient(circle at 85% 100%, rgba(79,70,229,0.22) 0%, rgba(79,70,229,0) 44%),
+      linear-gradient(135deg, #08060f 0%, #0d0a1a 45%, #0a0714 100%);
+    overflow:hidden;
+  }
+  .cards {
+    position:absolute; right:-40px; top:60px;
+    width:460px; height:460px;
+  }
+  .card {
+    position:absolute;
+    width:150px; height:210px;
+    border-radius:14px;
+    background:linear-gradient(160deg, rgba(99,102,241,0.18), rgba(167,139,250,0.10));
+    border:2px solid rgba(251,191,36,0.32);
+  }
+  .card::before {
+    content:""; position:absolute; inset:14px;
+    border:1px solid rgba(251,191,36,0.20); border-radius:8px;
+  }
+  .card.c1 { transform:rotate(-14deg); top:40px; left:120px; opacity:0.55; }
+  .card.c2 { transform:rotate(6deg); top:10px; left:230px; opacity:0.8; }
+  .card.c3 { transform:rotate(24deg); top:60px; left:320px; opacity:0.4; }
+  .content {
+    position:relative; z-index:2;
+    padding:76px 90px;
+    display:flex; flex-direction:column; justify-content:center;
+    height:100%;
+  }
+  .tag {
+    display:inline-block; align-self:flex-start;
+    padding:8px 22px; margin-bottom:26px;
+    background:rgba(251,191,36,0.14);
+    border:1px solid rgba(251,191,36,0.5);
+    border-radius:999px;
+    color:#fbbf24; font-size:22px; font-weight:700; letter-spacing:2px;
+  }
+  .title-en {
+    font-size:40px; font-weight:800; color:#efeaf9; letter-spacing:0.5px;
+    line-height:1.2;
+  }
+  .title-en .hl { color:#a78bfa; }
+  .title-kr {
+    margin-top:22px;
+    font-size:34px; font-weight:700; color:#e2ddef;
+    line-height:1.45;
+  }
+  .title-kr b { color:#a78bfa; }
+  .sub {
+    margin-top:28px;
+    font-size:23px; color:#847c9c; font-weight:500;
+  }
+  .brand {
+    position:absolute; left:90px; bottom:44px;
+    font-size:22px; font-weight:700; color:#3a3450; letter-spacing:1px;
+  }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="cards">
+      <div class="card c1"></div>
+      <div class="card c2"></div>
+      <div class="card c3"></div>
+    </div>
+    <div class="content">
+      <span class="tag">모건스탠리 AI 게임 리포트 · 7월 20일</span>
+      <div class="title-en">AI CUTS COST, <span class="hl">NOT HITS</span></div>
+      <div class="title-kr">개발비 최대 50%↓, <b>흥행 공식</b>은 못 찾았다</div>
+      <div class="sub">스팀 AI게임 비중 10.9%→30.8% 급증</div>
+    </div>
+    <div class="brand">티오의 게임노트</div>
+  </div>
+</body>
+</html>

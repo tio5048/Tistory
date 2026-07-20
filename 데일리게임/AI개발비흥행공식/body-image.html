@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1000px; height:560px; overflow:hidden; font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif; }
+  .stage {
+    position:relative;
+    width:1000px; height:560px;
+    background:
+      radial-gradient(circle at 8% 92%, rgba(167,139,250,0.20) 0%, rgba(167,139,250,0) 42%),
+      radial-gradient(circle at 95% 0%, rgba(99,102,241,0.22) 0%, rgba(99,102,241,0) 45%),
+      linear-gradient(160deg, #08060f 0%, #0d0a1a 55%, #0a0714 100%);
+    padding:56px 64px;
+  }
+  .eyebrow {
+    color:#fbbf24; font-size:19px; font-weight:700; letter-spacing:2px;
+  }
+  .headline {
+    margin-top:14px;
+    color:#efeaf9; font-size:31px; font-weight:800; line-height:1.35;
+  }
+  .headline b { color:#a78bfa; }
+  .grid {
+    margin-top:38px;
+    display:flex; gap:22px;
+  }
+  .card {
+    flex:1;
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(251,191,36,0.22);
+    border-radius:14px;
+    padding:26px 22px;
+  }
+  .card .mark {
+    width:34px; height:34px; border-radius:8px;
+    background:rgba(251,191,36,0.16);
+    border:1px solid rgba(251,191,36,0.5);
+    margin-bottom:16px;
+    position:relative;
+  }
+  .card .mark::after {
+    content:""; position:absolute; inset:9px;
+    background:#fbbf24; border-radius:2px;
+  }
+  .card:nth-child(2) .mark { background:rgba(167,139,250,0.16); border-color:rgba(167,139,250,0.5); }
+  .card:nth-child(2) .mark::after { background:#a78bfa; }
+  .card:nth-child(2) .num { color:#c4b5fd; }
+  .card:nth-child(3) .mark { background:rgba(99,102,241,0.16); border-color:rgba(99,102,241,0.5); }
+  .card:nth-child(3) .mark::after { background:#6366f1; }
+  .card:nth-child(3) .num { color:#818cf8; }
+  .card h3 { color:#efeaf9; font-size:20px; font-weight:700; margin-bottom:8px; }
+  .card .num { color:#fbbf24; font-size:21px; font-weight:800; margin-bottom:6px; }
+  .card p { color:#867d9c; font-size:15px; line-height:1.55; }
+  .footer {
+    margin-top:34px;
+    color:#3a3450; font-size:16px; font-weight:600; letter-spacing:1px;
+  }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="eyebrow">모건스탠리 AI 게임 개발비 리포트</div>
+    <div class="headline">비용은 줄어도 <b>흥행 공식</b>은 그대로 미지수</div>
+    <div class="grid">
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">최대 50%↓</div>
+        <h3>개발비 절감</h3>
+        <p>코드·아트·QA 전 과정에<br>생성형 AI 도입 확산</p>
+      </div>
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">10.9%→30.8%</div>
+        <h3>스팀 AI게임 비중</h3>
+        <p>3년 새 3배 가까이 증가<br>신작 증가분의 60~90%</p>
+      </div>
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">매출 비중 10%</div>
+        <h3>판매는 제자리</h3>
+        <p>신작 33% 차지해도<br>매출은 그만큼 못 따라가</p>
+      </div>
+    </div>
+    <div class="footer">티오의 게임노트</div>
+  </div>
+</body>
+</html>
